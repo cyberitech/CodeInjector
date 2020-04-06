@@ -1,9 +1,7 @@
 /*
 LICENSE INFORMATION
 
-Copyright 2020 Kaizen Cyber Ops
-
-Author: David Mattson
+Copyright 2020 Kaizen Cyber Ops, LLC.
 
 File Name: CodeInjector.cpp
 Associated File(s): CodeInector.h

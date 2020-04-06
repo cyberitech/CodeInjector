@@ -1,9 +1,7 @@
 /*
 LICENSE INFORMATION
 
-Copyright 2020 Kaizen Cyber Ops
-
-Author: David Mattson
+Copyright 2020 Kaizen Cyber Ops, LLC.
 
 File Name: CodeInjector.h
 Associated File(s): CodeInector.cpp 
@@ -42,8 +40,8 @@ https://opensource.org/licenses/MIT
 */
 
 
-/*WINDOWS PLATFORMS ONLY CURRENTLY*/
-#ifdef _WIN32		
+/*WINDOWS x64 PLATFORMS ONLY CURRENTLY*/
+#ifdef _WIN64		
 #define ARGC 4
 #include <windows.h>
 #include <strsafe.h>
