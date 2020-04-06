@@ -15,7 +15,8 @@ If a PID is used the target program will simply be injected. (Note: This require
 the injected code is exectued as a thread running within the context of the injected application.
 
 Example Usage:
-```> msfvenom -p windows/x64/messagebox --platform windows -a x64 -f raw -o shellcode.bin ICON=NO TEXT="hello world" TITLE="test" 
+```
+> msfvenom -p windows/x64/messagebox --platform windows -a x64 -f raw -o shellcode.bin ICON=NO TEXT="hello world" TITLE="test" 
 > .\CodeInjector.exe -f C:\Windows\notepad.exe .\shellcode3.bin
 Insepcting cli agruments...
 Reading shellcode...
